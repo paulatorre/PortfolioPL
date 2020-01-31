@@ -159,6 +159,9 @@ article {
     width: 100%;
     margin: 0;
   }
+  .home-container {
+    height: 20%;
+  }
 
   .sidebar-open {
     opacity: 1;

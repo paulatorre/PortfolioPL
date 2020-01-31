@@ -13,6 +13,7 @@ import education from "./Info/education";
 import skills from "./Info/skills";
 import SkillsList from "./Components/SkillsList";
 import Burger from "./Components/Burger";
+import OtherInterests from "./Components/OtherInterests";
 
 export default function App() {
   const experienceComponent = experience.map(item => <ExpCard item={item} />);
@@ -44,16 +45,14 @@ export default function App() {
             </p>
           </ResumeItem>
 
-          <ResumeItem
-            title="experience"
-            subtitle="work experience"
-            id="experience"
-          />
+          <ResumeItem title="experience" subtitle="work experience" />
           <div className="resumeItem-div"> {experienceComponent}</div>
           <ResumeItem title="my speciality" subtitle="my skills" />
           <div className="skills-container"> {skillsComponent}</div>
           <ResumeItem title="education" subtitle="what i studied?" />
           <div className="timeline-container"> {educationComponent}</div>
+          <ResumeItem title="other" subtitle="Other Interests" />
+          <OtherInterests />
         </main>
       </div>
     </div>

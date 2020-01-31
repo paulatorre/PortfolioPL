@@ -22,7 +22,7 @@ const MenuBar = () => {
             <a href="#education">Education</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Other Interests</a>
           </li>
         </ul>
       </nav>
