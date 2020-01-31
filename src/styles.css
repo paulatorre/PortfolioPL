@@ -1,0 +1,167 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0.5rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  display: flex;
+}
+.sidebar {
+  width: 23%;
+  height: 100%;
+
+  background: lightgrey;
+  position: fixed;
+  overflow: auto;
+  padding: 2em;
+}
+main {
+  width: 75%;
+  margin-left: 25%;
+}
+img {
+  width: 70%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding-top: 1rem;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 12px;
+  font-family: "Quicksand", Arial, sans-serif;
+  color: #2c2b2b;
+  display: inline-block;
+  padding: 0.8rem;
+  position: relative;
+}
+.infocard p {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-family: "Quicksand", Arial, sans-serif;
+  color: #5c5757;
+  text-align: center;
+}
+
+.home-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  width: auto;
+  background-size: cover;
+  background-image: url("./brooke-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.home-container button {
+  width: 5rem;
+}
+.resumeItem {
+  margin: 0 2rem;
+  padding-top: 1.5rem;
+  text-align: left;
+}
+.resumeItem-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+.icons {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #7c7c7c;
+  font-family: "Open sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-family: "Playfair Display", Georgia, serif;
+}
+h2 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: #898989;
+}
+h3 {
+  text-transform: uppercase;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 18px;
+  color: #242424;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: rgb(99, 96, 96);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+article {
+  margin: 10px;
+  padding: 0 5%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.skills-container {
+  margin-left: 2rem;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    opacity: 0;
+    z-index: -1000;
+    width: 45%;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sidebar-open {
+    opacity: 1;
+    z-index: 1000;
+  }
+}

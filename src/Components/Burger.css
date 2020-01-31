@@ -1,0 +1,25 @@
+.burger {
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+}
+.burger:focus {
+  outline: none;
+}
+.burger div {
+  width: 1.8rem;
+  height: 1px;
+  background-color: rgb(43, 40, 43);
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+    cursor: pointer;
+    margin-left: 48%;
+  }
+}
