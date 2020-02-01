@@ -11,8 +11,9 @@
   left: 1.2rem;
   width: 2px;
   height: 96%;
-  top: 10px;
+  top: 11px;
   z-index: -100;
+  opacity: 0.9;
 }
 
 .timeline-item {
@@ -52,7 +53,7 @@
   height: 2em;
   border-radius: 50%;
   border: 2px solid grey;
-  margin-top: -1.2rem;
+  margin-top: -1.15rem;
 }
 .timeline-circle i {
   margin-top: 5px;

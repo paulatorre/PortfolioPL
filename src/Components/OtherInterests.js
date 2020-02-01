@@ -20,6 +20,7 @@ const OtherInterests = props => {
         </span>
         <h3>Sustainability</h3>
         <ul>
+          <li>Circular Economy</li>
           <li>Reducing waste</li>
           <li>Build a sustainable wardrobe</li>
         </ul>

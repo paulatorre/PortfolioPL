@@ -18,7 +18,7 @@ import OtherInterests from "./Components/OtherInterests";
 export default function App() {
   const experienceComponent = experience.map(item => <ExpCard item={item} />);
   const educationComponent = education.map(item => <TimeLine item={item} />);
-  const skillsComponent = skills.map(skill => <SkillsList item={skill} />);
+  const skillsComponent = skills.map(skill => <SkillsList {...skill} />);
 
   const [isOpen, setOpen] = useState(false);
   const openSidebar = () => {
@@ -51,6 +51,7 @@ export default function App() {
           <div className="skills-container"> {skillsComponent}</div>
           <ResumeItem title="education" subtitle="what i studied?" />
           <div className="timeline-container"> {educationComponent}</div>
+
           <ResumeItem title="other" subtitle="Other Interests" />
           <OtherInterests />
         </main>
