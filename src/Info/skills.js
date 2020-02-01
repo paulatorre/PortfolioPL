@@ -2,7 +2,7 @@ const skills = [
   {
     name: "Spanish",
     value: "100%",
-    color: "#0153a2"
+    color: "#0180a2"
   },
   {
     name: "English",
@@ -14,25 +14,21 @@ const skills = [
     value: "50%",
     color: "#c14bcc"
   },
-  {
-    name: "Shopify",
-    value: "50%",
-    color: "#0177a2"
-  },
+
   {
     name: "HTML",
-    value: "30%",
-    color: "#e79900"
+    value: "95%",
+    color: "#e79980"
   },
   {
     name: "CSS",
-    value: "30%",
-    color: "#0142a2"
+    value: "80%",
+    color: "#0552a2"
   },
   {
     name: "Javascript",
-    value: "10%",
-    color: "#e7cb00"
+    value: "70%",
+    color: "#e66"
   }
 ];
 export default skills;

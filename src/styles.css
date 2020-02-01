@@ -17,7 +17,7 @@
   background: lightgrey;
   position: fixed;
   overflow: auto;
-  padding: 2em;
+  padding: 1.5em;
 }
 main {
   width: 75%;
@@ -26,7 +26,7 @@ main {
 img {
   width: 90%;
   border-radius: 50%;
-  filter: grayscale(100%);
+  filter: grayscale(80%);
 }
 
 ul {
@@ -148,7 +148,13 @@ article {
   padding: 0 5%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-
+.skills-container {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-left: 4rem;
+}
 @media screen and (max-width: 768px) {
   .sidebar {
     opacity: 0;
